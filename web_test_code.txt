@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+     .nav {
+       height: 70px;
+       border-bottom: 1px solid black;
+       display: flex;
+       align-items: center;       
+     }
+
+     .nav-right-items{
+       display: flex;
+       margin-left: auto;
+     }
+
+     .nav-item{
+       margin-left: 10px;
+     }
+
+     .title{
+       text-align: center;
+       font-size: 3.5rem;
+       font-weight: bold;
+     }
+
+     .subtitle{
+       text-align: center;
+       font-size: 1.0rem;
+       font-weight: 300;
+     }
+
+     .main{
+       width: 1000px;
+       margin: 0 auto;
+       margin-top: 60px;
+     }
+     .prices{
+       display: flex;
+
+     }
+
+     .price-item{
+       width: 300px;
+       height: 250px;
+       border: 1px solid black;
+       margin: 20px;
+       border-radius: 4px;
+       text-align: center;
+     }
+
+     .price-item-title{
+       font-size:1.5rem;
+       background: rgba(0,0,0,.03);
+       height:53px;
+       line-height: 53px;
+       border-bottom: 1px solid black;
+     }
+
+     .price-item-price{
+       font-size: 1.0rem;
+       font-weight: bold;
+       padding: 20px;
+     }
+
+     .price-item-button{
+       padding: .5rem 1rem;
+       font-size: 1.25rem;
+       line-height: 1.5;
+       border-radius: .3rem;
+       color: #007bff;
+       background-color: transparent;
+       backgroundimage: none;
+       border-color: #007bff;
+       margin-top: 30px;
+     }
+
+    </style> 
+  </head>
+  <body>
+    <div class = "nav">
+      <div class = "nav-right-items">
+        <div class = "nav-item">다은1</div>
+        <div class = "nav-item">다은2</div>
+        <div class = "nav-item">단비1</div>
+        <div class = "nav-item">단비2</div>
+      </div>
+    </div>  
+    <div class = "main">
+      <div class = "title">
+        세탁기현황나타내주는 앱*^^*
+      </div>
+      <div class = "subtitle">
+        기숙사에 거주하며 세탁기 이용에 많은 불편을 겪었습니다. 세탁기는 50분 동안 돌아가고 멈추는데, 보통 세탁기를 작동시킨 후 방으로 돌아와 다른 일을 하는 사람들이 대부분입니다. 그래서 50분이 지나도 빨래를 돌린 사실을 잊고 빨래를 가져가지 않는 사람들, 이를 기다리며 불편을 겪는 사람들이 많았습니다. 더군다나 세탁기는 5층, 10층, 15층에 두 대씩, 총 6대 밖에 없어서 해당 층에 거주하는 사람이 아니라면 빨래를 들고 내려갔다가 세탁기가 작동 중이면 발걸음을 다시 돌리는 불편을 겪어야 했습니다. 그래서 저희는 이와 같은 불편을 해결하기 위해서 세탁이 완료된 것을 사용자에게 알려주며, 층별 사용 가능한 세탁기 대 수 또한 보여주는 웹을 제작하기로 했습니다.
+      </div>
+
+      <div class = "prices">
+       <div class = "price-item">
+         <div class = "price-item-title">
+         Leedaeun
+         </div>
+         <div class = "price-item-price">
+           2019036380/woman
+         </div>
+         <div class = "price-item-detail">
+           wando
+         </div>
+         <button class = "price-item-button">
+           Click me!
+         </button>
+       </div>
+       <div class = "price-item">
+         <div class = "price-item-title">
+         Limdanbi
+         </div>
+         <div class = "price-item-price">
+           2019056462/woman
+         </div>
+         <div class = "price-item-detail">
+           incheon
+         </div>
+         <button class = "price-item-button">
+           Click me!
+         </button>
+       </div>
+       <div class = "price-item">
+         <div class = "price-item-title">
+         Hahyeonu
+         </div>
+         <div class = "price-item-price">
+           2019036844/man
+         </div>
+         <div class = "price-item-detail">
+           yongin
+         </div>
+         <button class = "price-item-button">
+           Click me!
+         </button>
+       </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
