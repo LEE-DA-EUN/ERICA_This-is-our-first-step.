@@ -6,5 +6,3 @@
 2019056462 임단비 LIMDANBI sweetrain822@naver.com (sweetrain822@gmail.com)
 
 2019036380 이다은 LEE-DA-EUN ekdms5809@naver.com (delee3064@gmail.com)
-
-2019036844 하현우 high2092 high092@naver.com (high2092@gmail.com)
