@@ -2,7 +2,7 @@
 
 <html>
 
- 
+
 
 <head>
 
@@ -13,6 +13,14 @@
 	<title>HYdorm Machine</title>
 
 	<link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script
+
+  src="https://code.jquery.com/jquery-3.4.1.js"
+
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+
+  crossorigin="anonymous"></script>
 
 	<style>
 
@@ -28,7 +36,7 @@
 
 		}
 
- 
+
 
 		.nav-right-items {
 
@@ -38,7 +46,7 @@
 
 		}
 
- 
+
 
 		.nav-item {
 
@@ -46,7 +54,7 @@
 
 		}
 
- 
+
 
 		.title {
 
@@ -58,7 +66,7 @@
 
 		}
 
- 
+
 
 		.subtitle {
 
@@ -72,7 +80,7 @@
 
 		}
 
- 
+
 
 		.main {
 
@@ -84,17 +92,17 @@
 
 		}
 
- 
+
 
 		.prices {
 
 			display: flex;
 
- 
+
 
 		}
 
- 
+
 
 		.price-item {
 
@@ -112,7 +120,7 @@
 
 		}
 
- 
+
 
 		.price-item-title {
 
@@ -128,7 +136,7 @@
 
 		}
 
- 
+
 
 		.price-item-first {
 
@@ -152,7 +160,7 @@
 
 		}
 
- 
+
 
     .price-item-second{
 
@@ -176,7 +184,7 @@
 
     }
 
- 
+
 
 		.price-item-drying {
 
@@ -202,9 +210,51 @@
 
 	</style>
 
+
+
+  <script>
+
+    $(document).ready(function(){
+
+      for(var i=1;i<=9;++i){
+
+        $.ajax({
+
+          url : "./apiControl.php",
+
+          type : "GET",
+
+          data : {"query":"gdd", "device":i},
+
+          success : function(data){
+
+            var jsonObj = JSON.parse(data);
+
+            var deviceID = "#"+jsonObj.Device;
+
+            if(jsonObj.Data === "ON"){
+
+              $(deviceID).css("background","#ff0000");
+
+            }else {
+
+              $(deviceID).css("background","#00ff00");
+
+            }
+
+          }
+
+        });
+
+        }
+
+    });
+
+  </script>
+
 </head>
 
- 
+
 
 <body>
 
@@ -232,7 +282,7 @@
 
 		</div>
 
- 
+
 
 		<div class="prices">
 
@@ -244,19 +294,19 @@
 
 				</div>
 
-				<button class="price-item-first">
+				<button class="price-item-first" id="1">
 
 					1st washing machine
 
 				</button>
 
-				<button class="price-item-second">
+				<button class="price-item-second" id="2">
 
 					2nd washing machine
 
 				</button>
 
-				<button class = "price-item-drying">
+				<button class = "price-item-drying" id="3">
 
            1st drying machine
 
@@ -272,19 +322,19 @@
 
          </div>
 
-         <button class = "price-item-first">
+         <button class = "price-item-first" id="4">
 
            1st washing machine
 
          </button>
 
-         <button class = "price-item-second">
+         <button class = "price-item-second" id="5">
 
            2nd washing machine
 
          </button>
 
-         <button class = "price-item-drying">
+         <button class = "price-item-drying" id="6">
 
            1st drying machine
 
@@ -300,19 +350,19 @@
 
          </div>
 
-         <button class = "price-item-first">
+         <button class = "price-item-first" id="7">
 
            1st washing machine
 
          </button>
 
-         <button class = "price-item-second">
+         <button class = "price-item-second" id="8">
 
            2nd washing machine
 
          </button>
 
-         <button class = "price-item-drying">
+         <button class = "price-item-drying" id="9">
 
            1st drying machine
 
