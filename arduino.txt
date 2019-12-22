@@ -1,0 +1,25 @@
+void setup() {
+
+  Serial.begin(9600);
+
+}
+
+ 
+
+#define SHAKE_THRESHOLD 900
+
+ 
+
+int prevVal = 0;
+
+void loop() {
+
+  int shakeSensorRes = analogRead(A0);
+
+  if(shakeSensorRes >= SHAKE_THRESHOLD){
+
+    Serial.println("Shake");
+
+  } 
+
+}
